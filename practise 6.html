@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practise Set 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+        }
+        img {
+            height: 100px;
+        }
+        #image_container {
+            border: 2px solid black;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            height: 25px;
+            padding-top: 5px;
+        }
+        header {
+            background-color: moccasin;
+        }
+
+
+        #box_container {
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            height: 80px;
+            width: 350;
+        }
+        #box3 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .box {
+            height: 75px;
+            width: 75px;
+            border: 2px solid red;
+            flex-shrink: 0;
+        }
+
+        #media_box {
+            height: 50px;
+            width: 50px;
+            background-color: darkseagreen;
+            border: 2px solid black;
+        }
+         @media screen and (min-width:300px)and (max-width:400px)  {
+            #media_box {
+                background-color:red;
+            }
+        }
+        @media screen and (min-width:400px)  {
+            #media_box {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Contact</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+        <main>
+            <div id="image_container">
+                <img src="https://i.abcnewsfe.com/a/e266830e-94a6-4432-8954-3c7ab7852fce/wirestory_01db0e428723c0febc514373969333bd_16x9.jpg?w=992" alt="BTS">
+            </div>
+            <div id="box_container">
+                <div id="box1" class="box">Box 1</div>
+                <div id="box2" class="box">Box 2</div>
+                <div id="box3" class="box">Box 3</div>
+            </div>
+            <br><br><hr>
+            <div id="media_box">Media Box</div>
+        </main>
+</body>
+</html>
